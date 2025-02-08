@@ -2,10 +2,16 @@
  * Sample donor data (for demonstration)
  ********************************************/
 const donors = [
-    { name: "John Doe", bloodGroup: "A+", phone: "123-456-7890", location: "Mumbai, Maharashtra" },
-    { name: "Jane Smith", bloodGroup: "O-", phone: "987-654-3210", location: "Delhi, Delhi" },
-    { name: "Alice Johnson", bloodGroup: "B+", phone: "555-555-5555", location: "Bangalore, Karnataka" },
-    { name: "Bob Brown", bloodGroup: "A+", phone: "111-222-3333", location: "Pune, Maharashtra" }
+    { name: "Ankit", bloodGroup: "A+", phone: "9343949390", location: "Mumbai, Maharashtra" },
+  { name: "Mahendra", bloodGroup: "O+", phone: "9876543210", location: "Delhi, Delhi" },
+  { name: "Shashwat", bloodGroup: "B+", phone: "9394949435", location: "Bangalore, Karnataka" },
+  { name: "Sabhya", bloodGroup: "A+", phone: "9835232343", location: "Pune, Maharashtra" },
+   { name: "Aadi", bloodGroup: "b+", phone: "9874324210", location: "Delhi, Delhi" },
+   { name: "Aadhish", bloodGroup: "O+", phone: "9924939410", location: "Delhi, Delhi" },
+  { name: "varnit", bloodGroup: "O-", phone: "9876543210", location: "Delhi, Delhi" },
+   { name: "Kshitiz", bloodGroup: "A-", phone: "9876543210", location: "Delhi, Delhi" },
+   { name: "DEV", bloodGroup: "AB+", phone: "9876532423", location: "Delhi, Delhi" },
+    
   ];
   
   /********************************************
@@ -45,16 +51,16 @@ const donors = [
     let botResponse = '';
     switch (message) {
       case 'Blood Donation Info':
-        botResponse = 'Hi! How can I assist you with blood donation info?';
+        botResponse = 'Blood donation is a lifesaving act where a healthy person donates blood to help patients in need.';
         break;
       case 'Eligibility to Donate':
         botResponse = 'To donate blood, you must be at least 18 years old, weigh at least 50 kg, and be in good health. Do you have any specific questions?';
         break;
       case 'Find Nearby Centers':
-        botResponse = 'Here are the nearest blood donation centers: [List of centers].';
+        botResponse = 'Here are the nearest blood donation centers: [AIIMS (All India Institute of Medical Sciences) ,Fortis Hospital, Vasant Kunj,Max Super Specialty Hospital, Saket ';
         break;
       default:
-        botResponse = "I'm sorry, I couldn't understand your query. Would you like to talk to an agent? Please provide your phone number.";
+        botResponse = "If you need further information, would you like to speak with an agent? Please share your phone number.";
         break;
     }
   
